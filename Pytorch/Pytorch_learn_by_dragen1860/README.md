@@ -1,6 +1,6 @@
 # 课程
 
-![](images/dragen_pytorch.jpg)
+![](images/dragen_pytorch.JPG)
 
 **Code supported by ：**[dragen1860](https://github.com/dragen1860)
 
