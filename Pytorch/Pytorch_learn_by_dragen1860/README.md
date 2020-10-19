@@ -16,7 +16,7 @@
 
 ```
 ├─Pytorch_learn_by_dragen1860
-	├─datasets # 数据集
+	├─datasets # 数据集/注意需要在百度云下自行提取数据集 然后将下载的数据替换掉此文件的datasets
 	├─images   # 图片
 	└─slide    # 课件
 	└─static   # visdom的static文件
@@ -142,6 +142,17 @@ if __name__ == "__main__":
 ```
 
 
+
+# 备注
+
+```
+上传大于100m的数据集需要使用git lfs
+但是git lfs只有1g的免费使用空间。。。
+所以我将之前的库删除了 将数据集datasets放在百度云链接下面 需要的同学自行下载提取 下载完毕后记得把datasets替换掉当前文件的datasets
+```
+
+数据集：[datasets](https://pan.baidu.com/s/1fxK5D95p33JIyAYw1Mgfrw )
+提取码：qwer 
 
 # 联系方式
 
