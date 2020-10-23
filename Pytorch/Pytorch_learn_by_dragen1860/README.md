@@ -151,8 +151,10 @@ if __name__ == "__main__":
 所以我将之前的库删除了 将数据集datasets放在百度云链接下面 需要的同学自行下载提取 下载完毕后记得把datasets替换掉当前文件的datasets
 ```
 
-数据集：[datasets](https://pan.baidu.com/s/1fxK5D95p33JIyAYw1Mgfrw )
-提取码：qwer 
+数据集：[datasets](https://pan.baidu.com/s/1gI_NnDsvlaw3eq0Fo3h-Fg  )
+提取码：qwer
+
+PS：如若遇到过期情况，可以邮箱联系我更新上传
 
 # 联系方式
 
