@@ -164,7 +164,7 @@ PS：如若遇到过期情况，可以邮箱联系我更新上传
 
 # 参考
 
-- ### 请支持正版！[课程来源网址](https://study.163.com/course/introduction.htm?share=2&shareId=480000001847407&courseId=1208894818&_trace_c_p_k2_=8a8366d9089e4893bd047e)
+- ### 若有能力请支持正版！[课程来源网址](https://study.163.com/course/introduction.htm?share=2&shareId=480000001847407&courseId=1208894818&_trace_c_p_k2_=8a8366d9089e4893bd047e)
 
 - ### 参考龙老师，[原课件及其代码](https://github.com/dragen1860/Deep-Learning-with-PyTorch-Tutorials)
 
