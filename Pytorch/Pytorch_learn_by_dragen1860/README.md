@@ -1,6 +1,6 @@
 # 课程
 
-![](images/dragen_pytorch.JPG)
+![](images/dragen_pytorch.jpg)
 
 **Code supported by ：**[dragen1860](https://github.com/dragen1860)
 
@@ -27,9 +27,7 @@
 
 - 课程大纲
 
-![](images/catalog.webp)
-
-
+  ![outline](images/outline.png)
 
 # 问题
 
