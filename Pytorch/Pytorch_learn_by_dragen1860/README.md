@@ -1,6 +1,6 @@
 # 课程
 
-![](images/course.jpg)
+![course](images/course.jpg)
 
 **Code supported by ：**[dragen1860](https://github.com/dragen1860)
 
