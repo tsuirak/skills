@@ -12,9 +12,9 @@
   		├─ videos # 需要使用的视频
   ```
 
-- 推荐配合李航老师的《统计学习方法》，个人也在啃这本书，写了一点关于这本书的理解和代码实现，欢迎访问 [我的笔记](https://github.com/tsuirak/Statistical-Learning-Methods-lihang)
-
 # 联系方式
+
+- 邮箱：tsuiraku@126.com
 
 
 
