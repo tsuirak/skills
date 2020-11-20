@@ -6,10 +6,10 @@
 
   ```
   ├─Learn_OpenCV_in_3_hours
-  	├─project # 工程代码
-  	├─tutorial # 教材源代码
-    ├─images # 需要使用的图片
-  	└─ videos # 需要使用的视频
+  		├─project # 工程代码
+  		├─tutorial # 教材源代码
+    	├─images # 需要使用的图片
+  		└─ videos # 需要使用的视频
   ```
 
 # 联系方式
