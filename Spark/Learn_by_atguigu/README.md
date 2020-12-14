@@ -20,7 +20,7 @@
 
 
 
-# 解决idea中无法创建Scala class
+## 解决idea中无法创建Scala class
 
 用于解决无法新new Scala Class，如下图所示：
 
@@ -36,7 +36,7 @@
 
 ### 主要原因：
 
-可能是因为拷贝教案中的代码不正确导致
+可能是因为拷贝PDF中的代码不正确导致
 
 ### 解决方法：
 
@@ -64,7 +64,13 @@ log4j.logger.org.apache.hadoop.hive.metastore.RetryingHMSHandler=FATAL
 log4j.logger.org.apache.hadoop.hive.ql.exec.FunctionRegistry=ERROR
 ```
 
-### 另外一种原因及其解决方法参考课程 [p10](https://www.bilibili.com/video/BV11A411L7CK?p=11)
+### 解决方法：[参考视频p10](https://www.bilibili.com/video/BV11A411L7CK?p=11)
+
+
+
+## IDEA编写Scala代码时自动显示变量类型
+
+### 解决方法：[参考博客](https://blog.csdn.net/m0_49337600/article/details/110501827)
 
 
 
