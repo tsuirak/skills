@@ -18,6 +18,12 @@
 
 
 
+# 备注
+
+文件数据集：[datasets](https://pan.baidu.com/share/init?surl=GFTFFIah9J01zs4MHIVZPg)
+
+提取码：lipi
+
 # 参考
 
 - [murtazahassan-github](https://github.com/murtazahassan/Learn-OpenCV-in-3-hours)
