@@ -5,7 +5,7 @@
 
 # 搭建流程
 
-- 由于 github 阅读性太差 ，以下步骤如果需要参考均转移到本人的 [语雀]() 进行阅读
+- 由于 github 阅读性太差 ，以下步骤如果需要参考均转移到本人的 [语雀](https://www.yuque.com/tsuiraku/movierecommender) 进行阅读
 
 ## 阶段1：项目体系架构概述
 
