@@ -1,10 +1,18 @@
 /**
  * 模块作用:数据加载服务
  * 启动服务:mongodb elasticsearch
+ */
+
+/**
  * MongoDB:
-  * Movie
-  * Rating
-  * Tag
+ * Movie
+ * Rating
+ * Tag
+ */
+
+/**
+ * Elasticsearch:
+ * Movie
  */
 
 package com.zyx.dataloader

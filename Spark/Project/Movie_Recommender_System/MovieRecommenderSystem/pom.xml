@@ -10,6 +10,12 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>recommender</module>
+        <module>recommender/StreamingRecommender</module>
+        <module>website</module>
+        <module>recommender/KafkaStreaming</module>
+        <module>businessServer</module>
+        <module>businessServer</module>
+
     </modules>
 
     <!-- 声明子项目公用的配置信息 -->

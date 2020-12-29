@@ -1,8 +1,12 @@
 /**
  * 模块作用:构建离散推荐算法
  * 启动服务:mongodb
+ */
+
+/**
  * MongoDB:
-  * UserRecs
+ * UserRecs
+ * MovieRecs
  */
 
 package com.zyx.offline
@@ -10,6 +14,7 @@ package com.zyx.offline
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.mllib.recommendation.{ALS, Rating}
+import org.jblas.DoubleMatrix
 
 
 /**
@@ -177,7 +182,45 @@ object OfflineRecommender {
       .format("com.mongodb.spark.sql")
       .save()
 
+    /**
+     * 计算电影的相似度矩阵以备实时推荐使用
+     * 得到电影矩阵 (n x k)
+     */
+
+    // 计算电影的特征矩阵
+    val movieFeatures = model.productFeatures.map{
+      case (mid, features) => (mid, new DoubleMatrix(features))
+    }
+    // 过滤
+    val movieRecs = movieFeatures.cartesian(movieFeatures)
+      .filter{
+        case (x, y) => x._1 != y._1
+      }
+      .map{
+        case (x, y) =>
+          val simScore = consinSim(x._2, y._2)
+          (x._1, (y._1, simScore))
+      }
+      .filter(_._2._2 > 0.6)
+      .groupByKey()
+      .map{
+        case (mid, item) => MovieRecs(mid, item.toList.map(x => Recommendation(x._1, x._2)))
+      }.toDF()
+
+    // 写入数据库
+    movieRecs
+      .write
+      .option("uri", mongoConfig.uri)
+      .option("collection",MOVIE_RECS)
+      .mode("overwrite")
+      .format("com.mongodb.spark.sql")
+      .save()
 
     spark.stop()
   }
+
+  def consinSim(x: DoubleMatrix, y: DoubleMatrix):Double = {
+    x.dot(y) / (x.norm2() * y.norm2())
+  }
+
 }

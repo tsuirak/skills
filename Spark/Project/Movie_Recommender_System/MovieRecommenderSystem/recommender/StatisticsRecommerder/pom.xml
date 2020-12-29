@@ -10,9 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>StatisticsRecommerder</artifactId>
-    <properties>
-
-    </properties>
 
     <dependencies>
         <!-- spark-core的依赖引入 -->

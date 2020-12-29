@@ -1,3 +1,6 @@
+/**
+ * 模块作用:参数选择
+ */
 package com.zyx.offline
 
 import breeze.numerics.sqrt
@@ -45,30 +48,37 @@ object ALSTriner {
      * 输出最优参数
      */
 
-    adjustALSParams(trainRDD, testingRDD)
+    adjustALSParams(ratingRDD)
 
     spark.stop()
   }
-  def adjustALSParams(trainRDD:RDD[Rating], testingRDD:RDD[Rating]){
+
+  /**
+   * 输出最终的最优参数
+   * @param trainRDD
+   */
+  def adjustALSParams(trainRDD:RDD[Rating]){
     val result = for(rank <- Array(100, 200, 250); lambda <- Array(1, 0.1, 0.01, 0.001))
       yield {
         val model = ALS.train(trainRDD, rank, 5, lambda)
-        val rmse = getRMSE(model, testingRDD)
+        val rmse = getRMSE(model, trainRDD)
         (rank, lambda, rmse)
       }
     println(result.minBy(_._3))
   }
 
   def getRMSE(model : MatrixFactorizationModel, testingRDD: RDD[Rating]): Double = {
+    // 构造userProducts RDD[(Int,Int)]
     val userMovies = testingRDD.map(item => (item.user, item.product))
     val predictRating = model.predict(userMovies)
     val real = testingRDD.map(item => ((item.user, item.product), item.rating))
     val predict = predictRating.map(item => ((item.user, item.product), item.rating))
 
-    //计算RMSE
+    // 计算RMSE
     sqrt(
       real.join(predict).map{
         case((uid, mid), (real, predict)) =>
+          // 真实值与预测值之间的差值
           val err = real - predict
           err*err
       }.mean()

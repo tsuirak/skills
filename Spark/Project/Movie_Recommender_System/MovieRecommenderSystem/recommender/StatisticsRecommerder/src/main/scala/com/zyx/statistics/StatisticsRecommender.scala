@@ -1,12 +1,15 @@
 /**
 * 模块作用:统计推荐算法
 * 启动服务:mongodb
-* MongoDB:
+*/
+
+/**
+ * MongoDB:
  * RateMoreMovies
  * RateMoreRecentlyMovies
  * AverageMovies
  * GenresTopMovies
-*/
+ */
 package com.zyx.statistics
 
 import java.text.SimpleDateFormat
