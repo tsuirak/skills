@@ -11,7 +11,6 @@
     <modules>
         <module>recommender</module>
         <module>businessServer</module>
-        <module>recommender/ContentRecommender</module>
     </modules>
 
     <!-- 声明子项目公用的配置信息 -->

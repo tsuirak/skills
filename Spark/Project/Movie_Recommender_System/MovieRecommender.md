@@ -34,12 +34,16 @@
 
 ## 阶段3：数据加载服务
 
-- 将数据加载到MongoDB
-- 将数据加载到Elasticsearch
+- 模块：**DataLoader**
+- 作用：
+  - 将数据加载到MongoDB
+  - 将数据加载到Elasticsearch
 
 ## 阶段4：推荐系统建设
 
-- ### 离线统计推荐算法
+- ### 统计推荐算模块
+
+  - 模块：**StatisticsRecommender**
 
   - 根据已经存储与 MongoDB 中的 movie 和 rating 数据集，统计历史热门电影、最近热门电影、电影的平均评分、电影每种类别中的 top10 电影
 
@@ -65,7 +69,6 @@
     timestamp 用户对于电影的评分的时间
     ```
 
-  - 实现：spark-sql (参考 OfflineRecommender 模块)
 
   #### 构建的目标：
 
@@ -87,17 +90,21 @@
 
       影 
 
-- ### 离散推荐算法构建
+- ### 基于LFM的离线推荐模块
 
-  - 协同过滤 ALS 算法
+  - 模块：**OfflineRecommender**
   
-- ### 实时推荐算法构建
+- ### 实时推荐模块
 
-  - 
+  - 模块：**StreamingRecommender**
 
+- ### 基于内容的推荐模块
 
+  - 模块：**ContentRecommender**
 
-## 阶段5：实时联调
+## 阶段5：前后端搭建
+
+- 本部分不需要自己搭建，使用提供的 **businessServer** 即可
 
 
 

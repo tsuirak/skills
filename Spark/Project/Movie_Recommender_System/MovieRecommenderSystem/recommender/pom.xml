@@ -16,7 +16,7 @@
         <module>DataLoader</module>
         <module>KafkaStreaming</module>
         <module>OfflineRecommender</module>
-        <module>StatisticsRecommerder</module>
+        <module>StatisticsRecommender</module>
         <module>StreamingRecommender</module>
     </modules>
 
