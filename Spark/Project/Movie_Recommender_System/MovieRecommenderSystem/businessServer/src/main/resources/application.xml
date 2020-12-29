@@ -5,7 +5,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- 用于Spring扫描真个配置代码 -->
-    <context:component-scan base-package="com.zyx.server"/>
+    <context:component-scan base-package="com.zyx.business"/>
+
+    <context:property-placeholder location="classpath:recommend.properties" ignore-unresolvable="true"/>
+
+    <bean id="mapper" class="com.fasterxml.jackson.databind.ObjectMapper"/>
 
 </beans>

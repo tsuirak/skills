@@ -11,7 +11,6 @@
 
     <artifactId>businessServer</artifactId>
 
-    <!-- 说明是一个Web项目 -->
     <packaging>war</packaging>
 
     <properties>
@@ -28,7 +27,7 @@
             <artifactId>log4j-core</artifactId>
             <version>2.9.1</version>
         </dependency>
-        <!-- Servlet -->
+
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -36,19 +35,16 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- elasticsearch -->
         <dependency>
             <groupId>org.elasticsearch.client</groupId>
             <artifactId>transport</artifactId>
             <version>5.6.2</version>
         </dependency>
-        <!-- MongoDB -->
         <dependency>
             <groupId>org.mongodb</groupId>
             <artifactId>mongodb-driver</artifactId>
             <version>3.5.0</version>
         </dependency>
-        <!-- Redis -->
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
@@ -66,11 +62,7 @@
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
+        <!-- Spring End -->
 
         <!-- fasterxml -->
         <dependency>
@@ -88,29 +80,25 @@
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
         </dependency>
+        <!-- fasterxml end -->
 
     </dependencies>
 
     <build>
         <finalName>BusinessServer</finalName>
-        <!-- 用于在Maven中提供Tomcat运行环境 -->
         <plugins>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                    <!-- 指定运行端口 -->
+                    <!-- http port -->
                     <port>8088</port>
-                    <!-- 指定运行时的根目录 -->
                     <path>/</path>
-                    <!-- 更改代码后tomcat是否自动加载 -->
                     <contextReloadable>true</contextReloadable>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
-
 
 </project>

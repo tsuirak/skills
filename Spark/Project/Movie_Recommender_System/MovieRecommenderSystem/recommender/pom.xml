@@ -12,9 +12,12 @@
     <artifactId>recommender</artifactId>
     <packaging>pom</packaging>
     <modules>
+        <module>ContentRecommender</module>
         <module>DataLoader</module>
-        <module>StatisticsRecommerder</module>
+        <module>KafkaStreaming</module>
         <module>OfflineRecommender</module>
+        <module>StatisticsRecommerder</module>
+        <module>StreamingRecommender</module>
     </modules>
 
     <!-- 仅声明子项目共有的依赖,子项目需要时可引入 -->
