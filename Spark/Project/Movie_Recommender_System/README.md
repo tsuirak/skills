@@ -44,63 +44,23 @@
 - ### 统计推荐算模块
 
   - 模块：**StatisticsRecommender**
+  - 实现：**Spark-SQL**
 
-  - 根据已经存储与 MongoDB 中的 movie 和 rating 数据集，统计历史热门电影、最近热门电影、电影的平均评分、电影每种类别中的 top10 电影
+- ### 基于协同过滤的离线推荐模块
 
-  - ```
-    数据集格式:
-    
-    movies 数据集:
-    mid 电影ID
-    name 电影名称
-    descri 电影详情描述
-    timelong 电影时长
-    issue 电影发行日期
-    shoot 电影拍摄日期
-    language 电影语言
-    genres 电影类型
-    actors 电影演员表
-    directors 电影导演
-    
-    rating 数据集:
-    uid 用户ID
-    mid 电影ID
-    score 用户对于电影的评分
-    timestamp 用户对于电影的评分的时间
-    ```
-
-
-  #### 构建的目标：
-
-  - 历史热门电影
-
-    - 定义：根据所有历史评分数据，计算历史评分次数最多的电影
-
-  - 最近热门电影
-
-    - 定义：根据评分，按月为单位计算最近时间的月份里面评分数最多的电影集合
-
-  - 电影的平均评分
-
-    - 定义：根据历史数据中所有用户对电影的评分，周期性的计算每个电影的平均得分
-
-  - Top10：
-
-    - 定义：根据提供的所有电影类别，分别计算每种类型的电影集合中评分最高的 10 个电
-
-      影 
-
-- ### 基于LFM的离线推荐模块
-
+  - 算法：**ALS**
   - 模块：**OfflineRecommender**
+  - 实现：**Spark-MLlib**
   
-- ### 实时推荐模块
-
-  - 模块：**StreamingRecommender**
-
 - ### 基于内容的推荐模块
 
   - 模块：**ContentRecommender**
+  - 实现：**Spark-MLlib**
+
+- ### 实时推荐模块
+
+  - 模块：**StreamingRecommender**
+  - 实现：**Spark- Streaming**
 
 ## 阶段5：前后端搭建
 
