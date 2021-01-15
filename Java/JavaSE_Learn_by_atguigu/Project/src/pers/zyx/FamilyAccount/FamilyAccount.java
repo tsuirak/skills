@@ -1,4 +1,4 @@
-package pers.zyx.familyaccount;
+package pers.zyx.FamilyAccount;
 
 public class FamilyAccount {
     public static void main(String[] args){

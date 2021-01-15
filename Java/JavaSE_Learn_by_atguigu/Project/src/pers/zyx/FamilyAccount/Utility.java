@@ -1,4 +1,4 @@
-package pers.zyx.familyaccount;
+package pers.zyx.FamilyAccount;
 import java.util.Scanner;
 
 public class Utility {

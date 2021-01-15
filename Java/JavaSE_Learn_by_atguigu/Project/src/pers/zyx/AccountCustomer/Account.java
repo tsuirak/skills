@@ -1,4 +1,4 @@
-package pers.zyx.accountcustomer;
+package pers.zyx.AccountCustomer;
 
 public class Account {
     private int id;

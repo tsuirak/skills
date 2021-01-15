@@ -1,4 +1,4 @@
-package pers.zyx.accountcustomerbank;
+package pers.zyx.AccountCustomerBank;
 
 public class Account {
     private double balance;

@@ -1,4 +1,4 @@
-package pers.zyx.accountcustomerbank;
+package pers.zyx.AccountCustomerBank;
 
 public class Bank {
     private Customer[] customer;

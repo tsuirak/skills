@@ -1,4 +1,4 @@
-package pers.zyx.accountcustomerbank;
+package pers.zyx.AccountCustomerBank;
 
 public class BankTest {
     public static void main(String[] args) {
