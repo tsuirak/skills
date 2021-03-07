@@ -8,7 +8,7 @@
   - 机器学习-吴恩达
   - 浙江大学研究生机器学习课程-胡浩基
   - 书籍<< Hands-On Machine Learning with Scikit-Learn,Keras & TensorFlow >>
-- 深度学习
+- 深度学习(DL)
   - 深度学习与Pytorch-龙良曲
   - TensorFlow-deeplearning.ai 
 - 自然语言处理(NLP)
